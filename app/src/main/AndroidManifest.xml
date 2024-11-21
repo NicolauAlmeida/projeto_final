@@ -2,27 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissões necessárias (se forem utilizadas no projeto) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoFinal"
         tools:targetApi="31">
+
+        <!-- Activity principal (tela inicial com as seções do cardápio) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.ProjetoFinal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Activity para exibir os itens de uma seção (Ex.: Entradas) -->
+        <activity
+            android:name=".activities.MenuSectionActivity"
+            android:exported="false" />
+
+        <!-- (Opcional) Outras activities para funcionalidades adicionais -->
+        <!-- Por exemplo, uma tela para exibir detalhes de um item do menu -->
+        <activity
+            android:name=".activities.MenuItemDetailActivity"
+            android:exported="false" />
+
+    </application>
 </manifest>
