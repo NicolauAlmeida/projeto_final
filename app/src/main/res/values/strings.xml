@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ProjetoFinal</string>
+    <string name="welcome_message">Bem-vindo ao Cardápio!</string>
+    <string name="btn_confirm_order">Confirmar Pedido</string>
+    <string name="label_total_price">Preço Total:</string>
+    <string name="section_entradas">Entradas</string>
+    <string name="section_pratos_principais">Pratos Principais</string>
+    <string name="section_sobremesas">Sobremesas</string>
+    <string name="section_bebidas_nao_alcoolicas">Bebidas Não Alcoólicas</string>
+    <string name="section_bebidas_alcoolicas">Bebidas Alcoólicas</string>
+    <string name="empty_order_message">Nenhum item no pedido!</string>
+    <string name="order_confirmed_message">Pedido confirmado!</string>
 </resources>
