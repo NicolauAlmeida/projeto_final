@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="btnEntradas" type="id">Entrada</item>
-    <item name="btnPratos" type="id">Pratos</item>
+    <item name="example_id" type="id" />
 </resources>
